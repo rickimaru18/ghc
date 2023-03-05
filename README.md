@@ -14,4 +14,15 @@ A simple client where you can view all users and its details.
 - Commit strategy: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 
 ### Optional setup
-- To increase GitHub API access limit, add you `personal access token` in `GitHubDataSource.kt`, line `Bearer`.
+- To increase GitHub API access limit, add your `personal access token` in `GitHubDataSource.kt`, line `Bearer`.
+
+## Things to improve
+
+- Add unit testing
+- Add widget testing
+- Save state of previous screen when navigating
+- Add flavors (prod, staging, dev)
+- Add theme (colors, typography, etc.)
+- Add crash reporting tool (e.g. Crashlytics)
+- Add linters
+- Display [payload](https://docs.github.com/en/webhooks-and-events/events/github-event-types) info in user details events list
