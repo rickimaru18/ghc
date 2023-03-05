@@ -19,12 +19,11 @@ import retrofit2.http.Query
 class GitHubDataSource {
     companion object {
         private val okHttpClient = OkHttpClient.Builder().addInterceptor {
-            // TODO: Add GitHub personal access token here.
-//            val request =
-//                it.request().newBuilder().addHeader(
-//                    "Authorization",
-//                    "Bearer <ADD PAT HERE>"
-//                ).build()
+            val request =
+                it.request().newBuilder()
+                    // TODO: Add GitHub personal access token here.
+//                    .addHeader("Authorization", "Bearer <ADD PATH HERE>")
+                    .build()
 
             it.proceed(request)
         }.build()
