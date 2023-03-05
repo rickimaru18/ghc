@@ -12,3 +12,6 @@ A simple client where you can view all users and its details.
 - Architecture: CLEAN
 - Branching strategy: [Trunk Based Development](https://trunkbaseddevelopment.com)
 - Commit strategy: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+
+### Optional setup
+- To increase GitHub API access limit, add you `personal access token` in `GitHubDataSource.kt`, line `Bearer`.
