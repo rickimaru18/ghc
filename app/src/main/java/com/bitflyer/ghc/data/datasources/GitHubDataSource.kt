@@ -20,11 +20,10 @@ class GitHubDataSource {
     companion object {
         private val okHttpClient = OkHttpClient.Builder().addInterceptor {
             val request =
-                it.request().newBuilder().addHeader(
-                    "Authorization",
-                    // 30 days expiry. (from March 5)
-                    "Bearer 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"
-                ).build()
+                it.request().newBuilder()
+                    // TODO: Add GitHub personal access token here.
+//                    .addHeader("Authorization", "Bearer <ADD PATH HERE>")
+                    .build()
 
             it.proceed(request)
         }.build()
